@@ -69,7 +69,7 @@ export default function Shadcn() {
                 <Button variant="outline">Open popover</Button>
               </PopoverTrigger>
               <PopoverContent className="w-80 flex justify-center bg-indigo-900 text-center text-white border-indigo-500">
-                Opening this popover made the section scroll up, didn't it?
+                Opening this popover made the section scroll up, didn&apos;t it?
               </PopoverContent>
             </Popover>{" "}
           </section>

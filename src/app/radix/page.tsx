@@ -68,7 +68,8 @@ export default function Radix() {
               </Popover.Trigger>
               <Popover.Portal>
                 <Popover.Content className="w-80 flex justify-center bg-indigo-900 text-center text-white border-indigo-500">
-                  Opening this popover made the section scroll up, didn't it?
+                  Opening this popover made the section scroll up, didn&apos;t
+                  it?
                 </Popover.Content>
               </Popover.Portal>
             </Popover.Root>{" "}
