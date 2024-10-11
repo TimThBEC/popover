@@ -5,9 +5,6 @@
 // Component imports
 import Menu from "@components/menu";
 
-// React imports
-import { useRef } from "react";
-
 // Shadcn imports
 import { Button } from "@/components/ui/button";
 import {
@@ -41,7 +38,8 @@ export default function NoSmoother() {
                 <Button variant="outline">Open popover</Button>
               </PopoverTrigger>
               <PopoverContent className="w-80 flex justify-center bg-indigo-900 text-center text-white border-indigo-500">
-                Opening this popover didn't make the section scroll up, did it?
+                Opening this popover didn&apos;t make the section scroll up, did
+                it?
               </PopoverContent>
             </Popover>{" "}
           </section>
