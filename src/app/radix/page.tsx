@@ -1,4 +1,4 @@
-// Shadcn page (page.tsx)
+// Radix page (page.tsx)
 
 "use client";
 
@@ -11,21 +11,19 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 
+// Radix imports
+import * as Popover from "@radix-ui/react-popover";
+
 // React imports
 import { useRef } from "react";
 
 // Shadcn imports
 import { Button } from "@/components/ui/button";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-export default function Shadcn() {
+export default function Radix() {
   // GSAP
 
   const gsapScope = useRef(null); // Ref for GSAP scope
@@ -52,7 +50,7 @@ export default function Shadcn() {
           <Menu />
           <section className="flex min-h-[200vh] w-full flex-col items-center justify-between bg-gray-950 p-32">
             <div className=" text-white text-2xl text-center">
-              <p>Shadcn Popover With ScrollSmoother</p>{" "}
+              <p>Radix Popover With ScrollSmoother</p>
               <p className="mt-2 text-base text-gray-400">
                 -- Unexpected Behavior --
               </p>
@@ -64,14 +62,16 @@ export default function Shadcn() {
             <p className="text-white text-2xl">
               This is the middle of the section
             </p>
-            <Popover>
-              <PopoverTrigger asChild>
+            <Popover.Root>
+              <Popover.Trigger asChild>
                 <Button variant="outline">Open popover</Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-80 flex justify-center bg-indigo-900 text-center text-white border-indigo-500">
-                Opening this popover made the section scroll up, didn't it?
-              </PopoverContent>
-            </Popover>{" "}
+              </Popover.Trigger>
+              <Popover.Portal>
+                <Popover.Content className="w-80 flex justify-center bg-indigo-900 text-center text-white border-indigo-500">
+                  Opening this popover made the section scroll up, didn't it?
+                </Popover.Content>
+              </Popover.Portal>
+            </Popover.Root>{" "}
           </section>
         </main>
       </div>
