@@ -26,7 +26,7 @@ export default function NoSmoother() {
             <div className=" text-white text-2xl text-center">
               <p>Shadcn Popover With No ScrollSmoother</p>
               <p className="mt-2 text-base text-gray-400">
-                -- Expected Behavior --
+                &#45;&#45; Expected Behavior &#45;&#45;
               </p>
               <p className="mt-2 text-sm text-gray-400">
                 Scroll to the bottom of this section to click the popover

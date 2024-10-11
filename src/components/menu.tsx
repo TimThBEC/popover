@@ -20,15 +20,15 @@ export default function Menu() {
             <FaBars className="h-6 w-6" />
           </Button>
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="flex flex-col items-center justify-start">
           <SheetHeader>
-            <SheetTitle>Example Pages</SheetTitle>
-            <SheetDescription className="flex flex-col items-start gap-2 ">
+            <SheetTitle className="text-center">Example Pages</SheetTitle>
+            <SheetDescription className="flex flex-col w-max gap-2 ">
               <Button asChild size="lg" variant="default">
-                <Link href="/">Shadcn</Link>
+                <Link href="/">Shadcn Popover</Link>
               </Button>
               <Button asChild size="lg" variant="default">
-                <Link href="/radix">Radix</Link>
+                <Link href="/radix">Radix Popover</Link>
               </Button>
               <Button asChild size="lg" variant="default">
                 <Link href="/nosmoother">No ScrollSmoother</Link>
